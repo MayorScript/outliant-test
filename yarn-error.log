@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add dotenv mongoose winston yup
+
+PATH: 
+  /Users/officialcycode/Downloads/google-cloud-sdk/bin:/usr/local/share/android-sdk/emulator:/usr/local/sbin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/officialcycode/Downloads/google-cloud-sdk/bin:/usr/local/share/android-sdk/emulator:/usr/local/sbin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/officialcycode/Documents/repo/personal/outliant-test/package.json: Unexpected token } in JSON at position 146
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "outliant-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "node dist/server.js",
+    },
+    "dependencies": {
+      "express": "^4.18.1"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.13",
+      "@types/node": "^18.0.6",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.7.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
