@@ -44,8 +44,8 @@ const getAllBooks = async (req: Request, res: Response) => {
 const deleteBook = async (req: Request, res: Response) => {
     const bookId: string = req.query;
   try {
-    const result = await delBook(req, res, bookId);
-    res.json(result);
+    await delBook(req, res, bookId);
+    res.json({message: "Book deleted successfully"});
   } catch (err: any) {
     logger.error(`An error occured ${err.message}`);
     res.status(400).json({
