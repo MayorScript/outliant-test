@@ -54,7 +54,7 @@ const delBook = async (req: Request, res: Response) => {
         )
     }
     const book: any = Book.findOne({ _id: id });
-    if(!book){
+    if(book === null){
          throw new Error(
             "Book Not Found!"
         )
